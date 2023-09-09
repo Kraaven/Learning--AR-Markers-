@@ -36,6 +36,7 @@ IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF73069
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral8451F364518D36D6B180F4610197D539CA97FF7F;
 IL2CPP_EXTERN_C String_t* _stringLiteral9FB2C851B465D9E1C8AC50DC9363FA9F3E79AF7A;
+IL2CPP_EXTERN_C String_t* _stringLiteralB20AF9E7C10465D26026798B4FF5157CEDDB66BB;
 IL2CPP_EXTERN_C String_t* _stringLiteralC346E7E8F316517C8193A0D35883F6D70A232293;
 IL2CPP_EXTERN_C String_t* _stringLiteralC62F5A44DCB8A87285B552D4A58518469BA76C29;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisButtonScript_t2941A7ECA4C66A13E86D78F14169E89857C0D026_m48FEFD319B58E01BFD04F9DE9BC4CB25D429B7D4_RuntimeMethod_var;
@@ -82,6 +83,21 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 // Native definition for COM marshalling of System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
+};
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	// System.Boolean System.Boolean::m_value
+	bool ___m_value_0;
+};
+
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
 };
 
 // System.IntPtr
@@ -262,6 +278,12 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m516FE285F5342F922C6EB3FCB33197E9017FF484_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, float ___d1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Rotate_m2A308205498AFEEA3DF784B1C86E4F7C126CA2EE (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___eulers0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Transform::Rotate(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, float ___xAngle0, float ___yAngle1, float ___zAngle2, const RuntimeMethod* method) ;
+// UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_Find_mFF1D6C65A7E2CD82443F4DCE4C53472FB30B7F51 (String_t* ___name0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<ButtonScript>()
@@ -364,6 +386,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonScript_TurnRight_mD102079AC29D1B12
 		return;
 	}
 }
+// System.Void ButtonScript::AlignDown()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonScript_AlignDown_m7DA1088108A5F1C0FE6C0426B6C2F09CADCF8ADC (ButtonScript_t2941A7ECA4C66A13E86D78F14169E89857C0D026* __this, const RuntimeMethod* method) 
+{
+	{
+		// FuseBox.transform.Rotate(90,0,0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___FuseBox_4;
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_0, NULL);
+		NullCheck(L_1);
+		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_1, (90.0f), (0.0f), (0.0f), NULL);
+		// }
+		return;
+	}
+}
+// System.Void ButtonScript::ShowTask()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonScript_ShowTask_m5C2CB16A4DEA53667AF4340A3818EBE14E46E0FB (ButtonScript_t2941A7ECA4C66A13E86D78F14169E89857C0D026* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB20AF9E7C10465D26026798B4FF5157CEDDB66BB);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// GameObject.Find("TaskUI").SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = GameObject_Find_mFF1D6C65A7E2CD82443F4DCE4C53472FB30B7F51(_stringLiteralB20AF9E7C10465D26026798B4FF5157CEDDB66BB, NULL);
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// }
+		return;
+	}
+}
 // System.Void ButtonScript::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonScript__ctor_m8877AA5F1151123B36B4513BD26E3547494C3FB8 (ButtonScript_t2941A7ECA4C66A13E86D78F14169E89857C0D026* __this, const RuntimeMethod* method) 
 {
@@ -388,6 +444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FuseScript_Start_mA7D5646E2367170448A44B
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisButtonScript_t2941A7ECA4C66A13E86D78F14169E89857C0D026_m48FEFD319B58E01BFD04F9DE9BC4CB25D429B7D4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB20AF9E7C10465D26026798B4FF5157CEDDB66BB);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC346E7E8F316517C8193A0D35883F6D70A232293);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC62F5A44DCB8A87285B552D4A58518469BA76C29);
 		s_Il2CppMethodInitialized = true;
@@ -408,6 +465,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FuseScript_Start_mA7D5646E2367170448A44B
 		// Debug.Log("Found Button System");
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralC346E7E8F316517C8193A0D35883F6D70A232293, NULL);
+		// GameObject.Find("TaskUI").SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = GameObject_Find_mFF1D6C65A7E2CD82443F4DCE4C53472FB30B7F51(_stringLiteralB20AF9E7C10465D26026798B4FF5157CEDDB66BB, NULL);
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
 		// }
 		return;
 	}
