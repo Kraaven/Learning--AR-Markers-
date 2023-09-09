@@ -7,7 +7,9 @@ public class ButtonScript : MonoBehaviour
 {
     public GameObject FuseBox;
     public GameObject UI;
+    public GameObject AudioSrc;
     public bool showUI;
+    public bool PlayAudio;
     public void Ini()
     {
         FuseBox = GameObject.FindGameObjectWithTag("Fuse");
@@ -15,6 +17,8 @@ public class ButtonScript : MonoBehaviour
         Debug.Log(FuseBox.transform.rotation);
         UI = GameObject.FindGameObjectWithTag("TaskUI");
         UI.SetActive(false);
+        AudioSrc = GameObject.FindGameObjectWithTag("Audio");
+        AudioSrc.GetComponent<AudioSource>().mute = true;
     }
 
     public void TurnLeft()
@@ -36,5 +40,12 @@ public class ButtonScript : MonoBehaviour
     {
         showUI = !showUI;
         UI.SetActive(showUI);
+    }
+
+    public void ListenSound()
+    {
+        PlayAudio = !PlayAudio;
+
+        AudioSrc.GetComponent<AudioSource>().mute = !PlayAudio;
     }
 }

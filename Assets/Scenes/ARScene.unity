@@ -317,6 +317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FuseBox: {fileID: 0}
+  UI: {fileID: 0}
+  showUI: 0
 --- !u!4 &150922614
 Transform:
   m_ObjectHideFlags: 0
@@ -890,7 +892,7 @@ PrefabInstance:
     - target: {fileID: 366428452883267241, guid: 1a07e1c59d1ee714a96f2b1c8f3e17a2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1354430841678984326, guid: 1a07e1c59d1ee714a96f2b1c8f3e17a2,
         type: 3}
@@ -975,6 +977,16 @@ PrefabInstance:
     - target: {fileID: 8067368650806229431, guid: 1a07e1c59d1ee714a96f2b1c8f3e17a2,
         type: 3}
       propertyPath: m_Name
+      value: TaskUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067368650806229431, guid: 1a07e1c59d1ee714a96f2b1c8f3e17a2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067368650806229431, guid: 1a07e1c59d1ee714a96f2b1c8f3e17a2,
+        type: 3}
+      propertyPath: m_TagString
       value: TaskUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []

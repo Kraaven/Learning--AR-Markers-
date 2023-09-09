@@ -27289,6 +27289,10 @@ struct ButtonScript_t2941A7ECA4C66A13E86D78F14169E89857C0D026  : public MonoBeha
 {
 	// UnityEngine.GameObject ButtonScript::FuseBox
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___FuseBox_4;
+	// UnityEngine.GameObject ButtonScript::UI
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UI_5;
+	// System.Boolean ButtonScript::showUI
+	bool ___showUI_6;
 };
 
 // UnityEngine.Rendering.CameraSwitcher
@@ -35069,9 +35073,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5173[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5174[6] = 
 {
 	static_cast<int32_t>(offsetof(LightData_tAC4023737E9903DE3F96B993AA323E062ABCB9ED, ___position_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(LightData_tAC4023737E9903DE3F96B993AA323E062ABCB9ED, ___color_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(LightData_tAC4023737E9903DE3F96B993AA323E062ABCB9ED, ___attenuation_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(LightData_tAC4023737E9903DE3F96B993AA323E062ABCB9ED, ___spotDirection_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(LightData_tAC4023737E9903DE3F96B993AA323E062ABCB9ED, ___occlusionProbeChannels_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(LightData_tAC4023737E9903DE3F96B993AA323E062ABCB9ED, ___layerMask_5)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5181[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5181[3] = 
 {
-	static_cast<int32_t>(offsetof(ButtonScript_t2941A7ECA4C66A13E86D78F14169E89857C0D026, ___FuseBox_4)),};
+	static_cast<int32_t>(offsetof(ButtonScript_t2941A7ECA4C66A13E86D78F14169E89857C0D026, ___FuseBox_4)),static_cast<int32_t>(offsetof(ButtonScript_t2941A7ECA4C66A13E86D78F14169E89857C0D026, ___UI_5)),static_cast<int32_t>(offsetof(ButtonScript_t2941A7ECA4C66A13E86D78F14169E89857C0D026, ___showUI_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5182[1] = 
 {
 	static_cast<int32_t>(offsetof(FuseScript_t8F7282B945B39597AB106683BA449DC94895CBB6, ___ButtonSystem_4)),};
